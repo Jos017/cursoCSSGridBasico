@@ -1,0 +1,110 @@
+.contenedor {
+    border: 5px solid #e1bee7;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
+}
+
+.item {
+    font-size: 4rem;
+}
+
+.contenedor .item-1 {
+    border: 5px solid #f8bbd0;
+    background-color: #ffeeff;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.contenedor .item-2 {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    grid-row: 2 / 4;
+}
+
+.contenedor .item-3 {
+    border: 5px solid #b2ebf2;
+    background-color: #e5ffff;
+    grid-area: 2 / 2 / 4 / 4;
+}
+
+.contenedor2 {
+    border: 5px solid #e1bee7;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    grid-template-areas:
+        "header header header"
+        "main main side"
+        "main main side";
+    place-content: center;
+}
+
+.contenedor2 .item-1 {
+    border: 5px solid #f8bbd0;
+    background-color: #ffeeff;
+    grid-area: header;
+}
+
+.contenedor2 .item-2 {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    grid-area: side;
+}
+
+.contenedor2 .item-3 {
+    border: 5px solid #b2ebf2;
+    background-color: #e5ffff;
+    grid-area: main;
+}
+
+.contenedor3 {
+    border: 5px solid #e1bee7;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 75px 75px 75px;
+    grid-template-rows: 75px 75px 75px;
+    grid-template-areas:
+        "a1 a2 a2"
+        "a3 a3 a4"
+        "a5 a6 a7";
+    place-content: center;
+}
+
+.contenedor3 .item-1 {
+    background-color: greenyellow;
+    grid-area: a1;
+}
+
+.contenedor3 .item-2 {
+    background-color: limegreen;
+    grid-area: a2;
+}
+
+.contenedor3 .item-3 {
+    background-color: green;
+    grid-area: a3;
+}
+
+.contenedor3 .item-4 {
+    background-color: greenyellow;
+    grid-area: a4;
+}
+
+.contenedor3 .item-5 {
+    background-color: greenyellow;
+    grid-area: a5;
+}
+
+.contenedor3 .item-6 {
+    background-color: limegreen;
+    grid-area: a6;
+}
+
+.contenedor3 .item-7 {
+    background-color: green;
+    grid-area: a7;
+}
